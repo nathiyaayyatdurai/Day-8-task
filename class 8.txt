@@ -1,0 +1,57 @@
+//1
+class Movie {
+    constructor(title, studio , rating = "PG"){
+        this.title = title;
+        this.studio = studio;
+        this.rating = rating;
+    }
+
+    get pg(){
+        return this.rating;
+    }
+}
+
+let mov = new Movie('Casino Royale','Eon Productions', 'PG­13')
+
+console.log(mov.pg);
+
+
+
+
+//3
+class Person {
+    constructor(name , age , address, phone)
+    {
+        this.address=address;
+        this.name=name;
+        this.age=age;
+        this.phone=phone;
+    }
+    printDetails() {
+        console.log("Name "+this.name+" age "+this.age+" address "+ this.address+" phone "+this.phone);
+    }
+
+}
+let Sumanth= new Person("sumanth hegde","25","bengaluru","9845xxxxxxx");
+ console.log(Sumanth);
+ Sumanth.printDetails();
+
+
+
+
+
+//4
+class Uber{
+    constructor(distance, price){
+this.price=price;
+this.distance=distance;
+    }
+     calculate() {
+         console.log("distance "+this.distance+" price "+this.price);
+        return this.price*this.distance;
+    }
+}
+
+const g= new Uber(12,14);
+
+console.log(g.calculate()+" rupees");
